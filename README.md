@@ -120,9 +120,6 @@ npm test
 
 Covers the eligible case, income boundaries, wrong state/course/category, missing information, evidence exactness, status invariants, recommendation ranking, and LLM failure fallback.
 
-## Data disclaimer
-
-The MVP uses a **curated demo dataset** of 51 schemes. Scheme names reference real programmes, but rule wording, thresholds, and benefit amounts are **illustrative** (flagged with `isIllustrative` in the data) and are **not official figures**. Always verify against the official scheme guidelines before applying.
 
 ## Scope and roadmap
 
