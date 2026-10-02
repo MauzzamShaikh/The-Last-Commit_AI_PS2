@@ -1,0 +1,40 @@
+SCH012|Maharashtra Merit Scholarship for Engineering|ANY|Maharashtra|800000|70|ENG|-|-|30000|Merit scholarship
+SCH013|Maharashtra VJNT and SBC Post-Matric Scholarship|VJNT,SBC|Maharashtra|150000|40|ALL|-|Y|28000|Maintenance allowance
+SCH014|Maharashtra EBC Fee Concession Scheme|General,EBC|Maharashtra|800000|50|PRO|-|Y|35000|Fee concession
+SCH015|Maharashtra Medical and Dental Student Support Grant|ANY|Maharashtra|600000|60|MED|-|Y|50000|Study support grant
+SCH016|Maharashtra Pharmacy Student Scholarship|ANY|Maharashtra|600000|55|PHARM|-|-|20000|Merit scholarship
+SCH017|Maharashtra Arts, Commerce and Science Graduate Scholarship|ANY|Maharashtra|400000|60|B.Sc,B.Com,BA|-|Y|12000|Merit scholarship
+SCH018|Maharashtra Second-Year Engineering Continuation Grant|ANY|Maharashtra|700000|65|ENG|2|-|18000|Continuation grant
+SCH019|Maharashtra Final-Year Engineering Project Support|ANY|Maharashtra|800000|60|ENG|3+|-|15000|Project support grant
+SCH020|Maharashtra MBA Entrepreneurship Scholarship|ANY|Maharashtra|800000|60|MBA|-|-|40000|Entrepreneurship scholarship
+SCH021|Maharashtra ITI Skill Development Stipend|ANY|Maharashtra|300000|45|ITI|-|Y|9000|Skill stipend
+SCH022|Karnataka Post-Matric Scholarship for OBC|OBC|Karnataka|200000|40|ALL|-|Y|25000|Maintenance allowance
+SCH023|Karnataka Engineering Merit Scholarship|ANY|Karnataka|600000|75|ENG|-|-|30000|Merit scholarship
+SCH024|Gujarat Post-Matric Scholarship for SEBC and OBC|OBC|Gujarat|250000|50|ALL|-|Y|22000|Maintenance allowance
+SCH025|Gujarat Professional Courses Fee Support|ANY|Gujarat|600000|60|PRO|-|-|28000|Fee support
+SCH026|Tamil Nadu Engineering Scholarship for BC and MBC Students|OBC|Tamil Nadu|250000|50|ENG|-|Y|30000|Fee support
+SCH027|Tamil Nadu Higher Education Merit Scholarship|ANY|Tamil Nadu|500000|80|UG|-|-|20000|Merit scholarship
+SCH028|Delhi Higher Education Merit Scholarship|ANY|Delhi|250000|60|ALL|-|Y|18000|Merit scholarship
+SCH029|Uttar Pradesh Post-Matric Scholarship for OBC|OBC|Uttar Pradesh|200000|40|ALL|-|Y|20000|Maintenance allowance
+SCH030|Rajasthan Engineering Merit Scholarship|ANY|Rajasthan|500000|70|ENG|-|Y|24000|Merit scholarship
+SCH031|Madhya Pradesh Post-Matric Scholarship for SC|SC|Madhya Pradesh|250000|40|ALL|-|Y|30000|Maintenance allowance
+SCH032|West Bengal Merit-cum-Means Scholarship|ANY|West Bengal|250000|60|UG|-|Y|12000|Merit-cum-means scholarship
+SCH033|Kerala Higher Education Scholarship for Top Scorers|ANY|Kerala|600000|85|ALL|-|-|15000|Merit scholarship
+SCH034|National Merit Scholarship for Undergraduates|ANY|-|800000|85|UG|-|-|25000|Merit scholarship
+SCH035|National Scholarship for SC Students|SC|-|250000|40|ALL|-|-|35000|Maintenance and fee support
+SCH036|National Scholarship for ST Students|ST|-|250000|40|ALL|-|-|35000|Maintenance and fee support
+SCH037|National Scholarship for OBC Students|OBC|-|250000|45|ALL|-|-|20000|Maintenance allowance
+SCH038|National Minority Scholarship for Technical Courses|Minority|-|250000|50|PRO|-|-|30000|Merit-cum-means scholarship
+SCH039|National Engineering Excellence Scholarship|ANY|-|800000|90|ENG|2+|-|40000|Merit scholarship
+SCH040|National Medical Merit Scholarship|ANY|-|800000|75|MED|-|-|45000|Merit scholarship
+SCH041|National Postgraduate Merit Scholarship|ANY|-|600000|65|PG|-|-|30000|Merit scholarship
+SCH042|National Science Aptitude Scholarship|ANY|-|800000|80|SCI|-|-|20000|Merit scholarship
+SCH043|National Technical Education Support Scheme|ANY|-|500000|60|TECH|-|-|22000|Study support grant
+SCH044|National Pharmacy Scholarship|ANY|-|600000|60|PHARM|-|-|18000|Merit scholarship
+SCH045|National Commerce and Management Scholarship|ANY|-|600000|60|COMM|-|-|16000|Merit scholarship
+SCH046|National Arts and Humanities Scholarship|ANY|-|400000|55|ARTS|-|-|12000|Merit scholarship
+SCH047|National ITI and Diploma Skills Scholarship|ANY|-|300000|50|DIP|-|-|10000|Skill stipend
+SCH048|National First-Year Student Welcome Grant|ANY|-|500000|60|ALL|1|-|8000|Admission grant
+SCH049|National Final-Year Completion Support|ANY|-|400000|55|ALL|3+|-|10000|Completion grant
+SCH050|National Economically Weaker Students Support Scheme|General,EBC|-|300000|50|ALL|-|-|15000|Study support grant
+SCH051|National OBC Technical Merit Scholarship|OBC|-|500000|75|ENG|-|-|28000|Merit scholarship

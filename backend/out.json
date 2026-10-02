@@ -1,0 +1,639 @@
+{
+    "results": [
+        {
+            "schemeId": "SCH002",
+            "schemeName": "Tuition and Exam Fee Reimbursement for Professional Courses (Maharashtra)",
+            "status": "ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH002-R01",
+                    "reason": "State Maharashtra matches the requirement."
+                },
+                {
+                    "ruleId": "SCH002-R02",
+                    "reason": "Family Income 450000 is within the limit of 800000."
+                },
+                {
+                    "ruleId": "SCH002-R03",
+                    "reason": "Course B.Tech is an accepted value."
+                },
+                {
+                    "ruleId": "SCH002-R04",
+                    "reason": "Academic Percentage 78 meets the minimum of 50."
+                }
+            ],
+            "failedRules": [],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Income Certificate",
+                "Previous Year Marksheet",
+                "Admission Receipt / Fee Receipt",
+                "Aadhaar-linked Bank Account"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH002-R01",
+                    "clause": "The applicant must be studying in and be a resident of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - Higher and Technical Education (demo summary)"
+                },
+                {
+                    "ruleId": "SCH002-R02",
+                    "clause": "Annual family income must not exceed Rs. 8 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "MahaDBT - Higher and Technical Education (demo summary)"
+                },
+                {
+                    "ruleId": "SCH002-R03",
+                    "clause": "The applicant must be enrolled in an approved professional degree course.",
+                    "section": "Eligible Courses",
+                    "source": "MahaDBT - Higher and Technical Education (demo summary)"
+                },
+                {
+                    "ruleId": "SCH002-R04",
+                    "clause": "The applicant must have scored at least 50% in the previous qualifying examination.",
+                    "section": "Academic Criteria",
+                    "source": "MahaDBT - Higher and Technical Education (demo summary)"
+                }
+            ],
+            "shortlisted": true,
+            "explanation": "You are eligible for the Tuition and Exam Fee Reimbursement because you are a resident of Maharashtra (SCH002-R01), your family income is below Rs 8 lakh (SCH002-R02), you are enrolled in an approved professional degree (SCH002-R03), and you have scored at least 50% in your previous exam (SCH002-R04).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH003",
+            "schemeName": "Hostel and Maintenance Allowance for Students (Maharashtra)",
+            "status": "ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH003-R01",
+                    "reason": "Domicile Status Yes matches the requirement."
+                },
+                {
+                    "ruleId": "SCH003-R02",
+                    "reason": "Family Income 450000 is within the limit of 800000."
+                },
+                {
+                    "ruleId": "SCH003-R03",
+                    "reason": "Course B.Tech is an accepted value."
+                }
+            ],
+            "failedRules": [],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Domicile Certificate",
+                "Income Certificate",
+                "Hostel Allotment / Rent Proof",
+                "Previous Year Marksheet"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH003-R01",
+                    "clause": "The applicant must hold a domicile certificate of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - Hostel and Maintenance Scheme (demo summary)"
+                },
+                {
+                    "ruleId": "SCH003-R02",
+                    "clause": "Annual family income must not exceed Rs. 8 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "MahaDBT - Hostel and Maintenance Scheme (demo summary)"
+                },
+                {
+                    "ruleId": "SCH003-R03",
+                    "clause": "The applicant must be pursuing a graduate or postgraduate course.",
+                    "section": "Eligible Courses",
+                    "source": "MahaDBT - Hostel and Maintenance Scheme (demo summary)"
+                }
+            ],
+            "shortlisted": true,
+            "explanation": "You are eligible because you have a Maharashtra domicile certificate, your family income is below Rs 8 lakh, and you are enrolled in a graduate program, satisfying rules SCH003-R01, SCH003-R02, and SCH003-R03.",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH010",
+            "schemeName": "Technical Education Merit Scholarship (Maharashtra)",
+            "status": "ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH010-R01",
+                    "reason": "Course B.Tech is an accepted value."
+                },
+                {
+                    "ruleId": "SCH010-R02",
+                    "reason": "Year 2 is an accepted value."
+                },
+                {
+                    "ruleId": "SCH010-R03",
+                    "reason": "Academic Percentage 78 meets the minimum of 75."
+                },
+                {
+                    "ruleId": "SCH010-R04",
+                    "reason": "Family Income 450000 is within the limit of 600000."
+                },
+                {
+                    "ruleId": "SCH010-R05",
+                    "reason": "State Maharashtra matches the requirement."
+                }
+            ],
+            "failedRules": [],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Previous Year Marksheet",
+                "Income Certificate",
+                "Bonafide Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH010-R01",
+                    "clause": "The applicant must be enrolled in a Bachelor of Engineering or Technology programme.",
+                    "section": "Eligible Courses",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH010-R02",
+                    "clause": "The applicant must be in the second year of study or above.",
+                    "section": "Eligibility Criteria",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH010-R03",
+                    "clause": "The applicant must have scored at least 75% in the previous year.",
+                    "section": "Merit Criteria",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH010-R04",
+                    "clause": "Annual family income must not exceed Rs. 6 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH010-R05",
+                    "clause": "The applicant must be studying in Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                }
+            ],
+            "shortlisted": true,
+            "explanation": "You are eligible for the Technical Education Merit Scholarship (Maharashtra) because you meet all required criteria: you are enrolled in a B.Tech program (SCH010-R01), you are in your second year (SCH010-R02), you have a 78% academic score (SCH010-R03), your family income is below Rs. 6 lakh (SCH010-R04), and you are studying in Maharashtra (SCH010-R05).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH001",
+            "schemeName": "Post-Matric Scholarship for OBC Students (Maharashtra)",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH001-R01",
+                    "reason": "Category OBC is an accepted value."
+                },
+                {
+                    "ruleId": "SCH001-R02",
+                    "reason": "State Maharashtra matches the requirement."
+                },
+                {
+                    "ruleId": "SCH001-R04",
+                    "reason": "Domicile Status Yes matches the requirement."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH001-R03",
+                    "reason": "Family Income 450000 exceeds the limit of 150000."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Digital OBC Caste Certificate",
+                "Income Certificate (Tehsildar)",
+                "Domicile Certificate",
+                "Previous Year Marksheet"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH001-R01",
+                    "clause": "The applicant must belong to the OBC category.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - VJNT, OBC and SBC Welfare Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH001-R02",
+                    "clause": "The applicant must be a resident of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - VJNT, OBC and SBC Welfare Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH001-R03",
+                    "clause": "Annual family income must not exceed Rs. 1.5 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "MahaDBT - VJNT, OBC and SBC Welfare Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH001-R04",
+                    "clause": "The applicant must hold a valid domicile certificate.",
+                    "section": "Documents Required",
+                    "source": "MahaDBT - VJNT, OBC and SBC Welfare Department (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because your annual family income exceeds the maximum allowed limit, violating rule SCH001-R03. The other required criteria (OBC category, Maharashtra residence, and domicile certificate) are satisfied (rules SCH001-R01, SCH001-R02, SCH001-R04).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH004",
+            "schemeName": "Central Sector Scheme of Scholarship for College and University Students",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH004-R01",
+                    "reason": "Family Income 450000 is within the limit of 450000."
+                },
+                {
+                    "ruleId": "SCH004-R03",
+                    "reason": "Year 2 meets the minimum of 1."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH004-R02",
+                    "reason": "Academic Percentage 78 is below the minimum of 80."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Class 12 Marksheet",
+                "Income Certificate",
+                "Bank Account Details",
+                "Bonafide Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH004-R01",
+                    "clause": "Annual family income must not exceed Rs. 4.5 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "National Scholarship Portal (demo summary)"
+                },
+                {
+                    "ruleId": "SCH004-R02",
+                    "clause": "The applicant must have scored 80% or more in the qualifying examination.",
+                    "section": "Merit Criteria",
+                    "source": "National Scholarship Portal (demo summary)"
+                },
+                {
+                    "ruleId": "SCH004-R03",
+                    "clause": "The applicant must be enrolled in a regular degree course.",
+                    "section": "Eligibility Criteria",
+                    "source": "National Scholarship Portal (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because you did not meet the required academic percentage (Rule SCH004-R02).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH005",
+            "schemeName": "Post-Matric Scholarship for SC Students (Maharashtra)",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH005-R02",
+                    "reason": "State Maharashtra matches the requirement."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH005-R01",
+                    "reason": "Category OBC is not one of the accepted values (SC)."
+                },
+                {
+                    "ruleId": "SCH005-R03",
+                    "reason": "Family Income 450000 exceeds the limit of 250000."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Caste Certificate",
+                "Caste Validity Certificate",
+                "Income Certificate",
+                "Domicile Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH005-R01",
+                    "clause": "The applicant must belong to the Scheduled Caste category.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - Social Justice Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH005-R02",
+                    "clause": "The applicant must be a resident of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - Social Justice Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH005-R03",
+                    "clause": "Annual family income must not exceed Rs. 2.5 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "MahaDBT - Social Justice Department (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible for the Post-Matric Scholarship for SC Students (Maharashtra) because you do not belong to the Scheduled Caste category (failed SCH005-R01) and your annual family income exceeds the limit (failed SCH005-R03).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH006",
+            "schemeName": "Post-Matric Scholarship for ST Students (Maharashtra)",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH006-R02",
+                    "reason": "State Maharashtra matches the requirement."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH006-R01",
+                    "reason": "Category OBC is not one of the accepted values (ST)."
+                },
+                {
+                    "ruleId": "SCH006-R03",
+                    "reason": "Family Income 450000 exceeds the limit of 250000."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Tribe Certificate",
+                "Tribe Validity Certificate",
+                "Income Certificate",
+                "Domicile Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH006-R01",
+                    "clause": "The applicant must belong to the Scheduled Tribe category.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - Tribal Development Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH006-R02",
+                    "clause": "The applicant must be a resident of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "MahaDBT - Tribal Development Department (demo summary)"
+                },
+                {
+                    "ruleId": "SCH006-R03",
+                    "clause": "Annual family income must not exceed Rs. 2.5 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "MahaDBT - Tribal Development Department (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because you do not belong to the Scheduled Tribe category (failed SCH006-R01) and your family income exceeds the limit (failed SCH006-R03), although you meet the residency requirement (matched SCH006-R02).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH007",
+            "schemeName": "Merit-cum-Means Scholarship for Minority Communities",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH007-R03",
+                    "reason": "Academic Percentage 78 meets the minimum of 50."
+                },
+                {
+                    "ruleId": "SCH007-R04",
+                    "reason": "Course B.Tech is an accepted value."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH007-R01",
+                    "reason": "Category OBC is not one of the accepted values (Minority)."
+                },
+                {
+                    "ruleId": "SCH007-R02",
+                    "reason": "Family Income 450000 exceeds the limit of 250000."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Minority Community Declaration",
+                "Income Certificate",
+                "Previous Year Marksheet",
+                "Fee Receipt"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH007-R01",
+                    "clause": "The applicant must belong to a notified minority community.",
+                    "section": "Eligibility Criteria",
+                    "source": "National Scholarship Portal - Ministry of Minority Affairs (demo summary)"
+                },
+                {
+                    "ruleId": "SCH007-R02",
+                    "clause": "Annual family income must not exceed Rs. 2.5 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "National Scholarship Portal - Ministry of Minority Affairs (demo summary)"
+                },
+                {
+                    "ruleId": "SCH007-R03",
+                    "clause": "The applicant must have scored at least 50% in the previous examination.",
+                    "section": "Academic Criteria",
+                    "source": "National Scholarship Portal - Ministry of Minority Affairs (demo summary)"
+                },
+                {
+                    "ruleId": "SCH007-R04",
+                    "clause": "The applicant must be enrolled in a professional or technical course.",
+                    "section": "Eligible Courses",
+                    "source": "National Scholarship Portal - Ministry of Minority Affairs (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because you do not belong to a notified minority community (SCH007-R01) and your annual family income exceeds the Rs. 2.5 lakh limit (SCH007-R02).",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH008",
+            "schemeName": "Merit Scholarship for Diploma and ITI Students (Maharashtra)",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH008-R02",
+                    "reason": "State Maharashtra matches the requirement."
+                },
+                {
+                    "ruleId": "SCH008-R03",
+                    "reason": "Academic Percentage 78 meets the minimum of 60."
+                },
+                {
+                    "ruleId": "SCH008-R04",
+                    "reason": "Family Income 450000 is within the limit of 600000."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH008-R01",
+                    "reason": "Course B.Tech is not one of the accepted values (Diploma, ITI)."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Previous Year Marksheet",
+                "Income Certificate",
+                "Institute Bonafide Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH008-R01",
+                    "clause": "The applicant must be enrolled in a diploma or ITI programme.",
+                    "section": "Eligible Courses",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH008-R02",
+                    "clause": "The applicant must be a resident of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH008-R03",
+                    "clause": "The applicant must have scored at least 60% in the previous examination.",
+                    "section": "Merit Criteria",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH008-R04",
+                    "clause": "Annual family income must not exceed Rs. 6 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because you are not enrolled in a diploma or ITI programme, which is required by rule SCH008-R01.",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH009",
+            "schemeName": "Postgraduate Higher Education Scholarship (Maharashtra)",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH009-R02",
+                    "reason": "State Maharashtra matches the requirement."
+                },
+                {
+                    "ruleId": "SCH009-R03",
+                    "reason": "Academic Percentage 78 meets the minimum of 60."
+                },
+                {
+                    "ruleId": "SCH009-R04",
+                    "reason": "Family Income 450000 is within the limit of 600000."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH009-R01",
+                    "reason": "Course B.Tech is not one of the accepted values (M.Tech, MBA, M.Sc, MA, M.Com, M.Pharm)."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Graduation Marksheet",
+                "Income Certificate",
+                "Admission Proof",
+                "Domicile Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH009-R01",
+                    "clause": "The applicant must be enrolled in a postgraduate programme.",
+                    "section": "Eligible Courses",
+                    "source": "Higher and Technical Education Department, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH009-R02",
+                    "clause": "The applicant must be a resident of Maharashtra.",
+                    "section": "Eligibility Criteria",
+                    "source": "Higher and Technical Education Department, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH009-R03",
+                    "clause": "The applicant must have scored at least 60% in the graduation examination.",
+                    "section": "Merit Criteria",
+                    "source": "Higher and Technical Education Department, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH009-R04",
+                    "clause": "Annual family income must not exceed Rs. 6 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "Higher and Technical Education Department, Maharashtra (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because you are not enrolled in a postgraduate programme, which violates rule SCH009-R01.",
+            "explanationSource": "llm"
+        },
+        {
+            "schemeId": "SCH011",
+            "schemeName": "First-Year Engineering Admission Grant (Maharashtra)",
+            "status": "NOT_ELIGIBLE",
+            "matchedRules": [
+                {
+                    "ruleId": "SCH011-R01",
+                    "reason": "Course B.Tech is an accepted value."
+                },
+                {
+                    "ruleId": "SCH011-R03",
+                    "reason": "Family Income 450000 is within the limit of 600000."
+                },
+                {
+                    "ruleId": "SCH011-R04",
+                    "reason": "Domicile Status Yes matches the requirement."
+                }
+            ],
+            "failedRules": [
+                {
+                    "ruleId": "SCH011-R02",
+                    "reason": "Year 2 does not match the required value 1."
+                }
+            ],
+            "missingInformation": [],
+            "requiredDocuments": [
+                "Admission Letter",
+                "Income Certificate",
+                "Domicile Certificate"
+            ],
+            "evidence": [
+                {
+                    "ruleId": "SCH011-R01",
+                    "clause": "The applicant must be enrolled in a Bachelor of Engineering or Technology programme.",
+                    "section": "Eligible Courses",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH011-R02",
+                    "clause": "The applicant must be in the first year of study.",
+                    "section": "Eligibility Criteria",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH011-R03",
+                    "clause": "Annual family income must not exceed Rs. 6 lakh.",
+                    "section": "Income Ceiling",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                },
+                {
+                    "ruleId": "SCH011-R04",
+                    "clause": "The applicant must hold a Maharashtra domicile certificate.",
+                    "section": "Documents Required",
+                    "source": "Directorate of Technical Education, Maharashtra (demo summary)"
+                }
+            ],
+            "shortlisted": false,
+            "explanation": "You are not eligible because you are not in the first year of study, which violates rule SCH011-R02.",
+            "explanationSource": "llm"
+        }
+    ]
+}

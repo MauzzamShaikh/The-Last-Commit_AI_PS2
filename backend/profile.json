@@ -1,0 +1,11 @@
+{
+  "profile": {
+    "course": "B.Tech",
+    "year": 2,
+    "state": "Maharashtra",
+    "category": "OBC",
+    "familyIncome": 450000,
+    "academicPercentage": 78,
+    "domicileStatus": "Yes"
+  }
+}

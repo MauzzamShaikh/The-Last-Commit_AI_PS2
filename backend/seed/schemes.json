@@ -1,0 +1,3443 @@
+[
+  {
+    "_id": "SCH001",
+    "benefits": { "estimatedAnnualValue": 30000, "benefitType": "Maintenance allowance + fee support", "summary": "Monthly maintenance allowance and partial fee support for OBC students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Post-Matric Scholarship for OBC Students (Maharashtra)",
+    "description": "Maintenance and fee support for OBC students in post-10th courses.",
+    "rules": [
+      {
+        "ruleId": "SCH001-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to the OBC category.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH001-R02",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH001-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 150000,
+        "text": "Annual family income must not exceed Rs. 1.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH001-R04",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Digital OBC Caste Certificate",
+      "Income Certificate (Tehsildar)",
+      "Domicile Certificate",
+      "Previous Year Marksheet"
+    ],
+    "source": "MahaDBT - VJNT, OBC and SBC Welfare Department (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH002",
+    "benefits": { "estimatedAnnualValue": 60000, "benefitType": "Tuition and exam fee reimbursement", "summary": "Reimbursement of tuition and examination fees for professional courses.", "frequency": "annual", "isIllustrative": true },
+    "name": "Tuition and Exam Fee Reimbursement for Professional Courses (Maharashtra)",
+    "description": "Fee reimbursement for economically weaker students in professional degree courses.",
+    "rules": [
+      {
+        "ruleId": "SCH002-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be studying in and be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH002-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH002-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA"
+        ],
+        "text": "The applicant must be enrolled in an approved professional degree course.",
+        "section": "Eligible Courses",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH002-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Admission Receipt / Fee Receipt",
+      "Aadhaar-linked Bank Account"
+    ],
+    "source": "MahaDBT - Higher and Technical Education (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH003",
+    "benefits": { "estimatedAnnualValue": 36000, "benefitType": "Hostel and maintenance allowance", "summary": "Monthly allowance for students living away from home.", "frequency": "annual", "isIllustrative": true },
+    "name": "Hostel and Maintenance Allowance for Students (Maharashtra)",
+    "description": "Monthly allowance for students from Maharashtra studying away from home.",
+    "rules": [
+      {
+        "ruleId": "SCH003-R01",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a domicile certificate of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH003-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH003-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "MBA",
+          "M.Tech"
+        ],
+        "text": "The applicant must be pursuing a graduate or postgraduate course.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Domicile Certificate",
+      "Income Certificate",
+      "Hostel Allotment / Rent Proof",
+      "Previous Year Marksheet"
+    ],
+    "source": "MahaDBT - Hostel and Maintenance Scheme (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH004",
+    "benefits": { "estimatedAnnualValue": 12000, "benefitType": "Merit scholarship", "summary": "Annual merit-cum-means scholarship paid to the student.", "frequency": "annual", "isIllustrative": true },
+    "name": "Central Sector Scheme of Scholarship for College and University Students",
+    "description": "Merit-cum-means scholarship for students with strong board results.",
+    "rules": [
+      {
+        "ruleId": "SCH004-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 450000,
+        "text": "Annual family income must not exceed Rs. 4.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH004-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 80,
+        "text": "The applicant must have scored 80% or more in the qualifying examination.",
+        "section": "Merit Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH004-R03",
+        "field": "year",
+        "operator": ">=",
+        "value": 1,
+        "text": "The applicant must be enrolled in a regular degree course.",
+        "section": "Eligibility Criteria",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Class 12 Marksheet",
+      "Income Certificate",
+      "Bank Account Details",
+      "Bonafide Certificate"
+    ],
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH005",
+    "benefits": { "estimatedAnnualValue": 40000, "benefitType": "Maintenance allowance + fee support", "summary": "Maintenance and fee support for SC students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Post-Matric Scholarship for SC Students (Maharashtra)",
+    "description": "Fee and maintenance support for Scheduled Caste students.",
+    "rules": [
+      {
+        "ruleId": "SCH005-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "SC"
+        ],
+        "text": "The applicant must belong to the Scheduled Caste category.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH005-R02",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH005-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Caste Certificate",
+      "Caste Validity Certificate",
+      "Income Certificate",
+      "Domicile Certificate"
+    ],
+    "source": "MahaDBT - Social Justice Department (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH006",
+    "benefits": { "estimatedAnnualValue": 40000, "benefitType": "Maintenance allowance + fee support", "summary": "Maintenance and fee support for ST students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Post-Matric Scholarship for ST Students (Maharashtra)",
+    "description": "Fee and maintenance support for Scheduled Tribe students.",
+    "rules": [
+      {
+        "ruleId": "SCH006-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "ST"
+        ],
+        "text": "The applicant must belong to the Scheduled Tribe category.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH006-R02",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH006-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Tribe Certificate",
+      "Tribe Validity Certificate",
+      "Income Certificate",
+      "Domicile Certificate"
+    ],
+    "source": "MahaDBT - Tribal Development Department (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH007",
+    "benefits": { "estimatedAnnualValue": 30000, "benefitType": "Merit-cum-means scholarship", "summary": "Course fee and maintenance support for minority students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Merit-cum-Means Scholarship for Minority Communities",
+    "description": "Support for minority students in professional and technical courses.",
+    "rules": [
+      {
+        "ruleId": "SCH007-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "Minority"
+        ],
+        "text": "The applicant must belong to a notified minority community.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH007-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH007-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH007-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech"
+        ],
+        "text": "The applicant must be enrolled in a professional or technical course.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Minority Community Declaration",
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Fee Receipt"
+    ],
+    "source": "National Scholarship Portal - Ministry of Minority Affairs (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH008",
+    "benefits": { "estimatedAnnualValue": 15000, "benefitType": "Merit scholarship", "summary": "Merit scholarship for diploma and ITI students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Merit Scholarship for Diploma and ITI Students (Maharashtra)",
+    "description": "Merit support for students in diploma and ITI programmes.",
+    "rules": [
+      {
+        "ruleId": "SCH008-R01",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in a diploma or ITI programme.",
+        "section": "Eligible Courses",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH008-R02",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH008-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous examination.",
+        "section": "Merit Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH008-R04",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Previous Year Marksheet",
+      "Income Certificate",
+      "Institute Bonafide Certificate"
+    ],
+    "source": "Directorate of Technical Education, Maharashtra (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH009",
+    "benefits": { "estimatedAnnualValue": 25000, "benefitType": "Postgraduate scholarship", "summary": "Annual support for postgraduate students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Postgraduate Higher Education Scholarship (Maharashtra)",
+    "description": "Support for postgraduate students from Maharashtra.",
+    "rules": [
+      {
+        "ruleId": "SCH009-R01",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "M.Tech",
+          "MBA",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm"
+        ],
+        "text": "The applicant must be enrolled in a postgraduate programme.",
+        "section": "Eligible Courses",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH009-R02",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH009-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the graduation examination.",
+        "section": "Merit Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH009-R04",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Graduation Marksheet",
+      "Income Certificate",
+      "Admission Proof",
+      "Domicile Certificate"
+    ],
+    "source": "Higher and Technical Education Department, Maharashtra (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH010",
+    "benefits": { "estimatedAnnualValue": 25000, "benefitType": "Merit scholarship", "summary": "Merit scholarship for continuing engineering students.", "frequency": "annual", "isIllustrative": true },
+    "name": "Technical Education Merit Scholarship (Maharashtra)",
+    "description": "Merit scholarship for continuing engineering students with strong academics.",
+    "rules": [
+      {
+        "ruleId": "SCH010-R01",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in a Bachelor of Engineering or Technology programme.",
+        "section": "Eligible Courses",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH010-R02",
+        "field": "year",
+        "operator": "in",
+        "value": [
+          2,
+          3,
+          4
+        ],
+        "text": "The applicant must be in the second year of study or above.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH010-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 75,
+        "text": "The applicant must have scored at least 75% in the previous year.",
+        "section": "Merit Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH010-R04",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH010-R05",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be studying in Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Previous Year Marksheet",
+      "Income Certificate",
+      "Bonafide Certificate"
+    ],
+    "source": "Directorate of Technical Education, Maharashtra (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH011",
+    "benefits": { "estimatedAnnualValue": 20000, "benefitType": "Admission grant", "summary": "One-time grant for first-year engineering students.", "frequency": "one-time", "isIllustrative": true },
+    "name": "First-Year Engineering Admission Grant (Maharashtra)",
+    "description": "One-time support for students entering the first year of engineering.",
+    "rules": [
+      {
+        "ruleId": "SCH011-R01",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in a Bachelor of Engineering or Technology programme.",
+        "section": "Eligible Courses",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH011-R02",
+        "field": "year",
+        "operator": "==",
+        "value": 1,
+        "text": "The applicant must be in the first year of study.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH011-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH011-R04",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a Maharashtra domicile certificate.",
+        "section": "Documents Required",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Admission Letter",
+      "Income Certificate",
+      "Domicile Certificate"
+    ],
+    "source": "Directorate of Technical Education, Maharashtra (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH012",
+    "name": "Maharashtra Merit Scholarship for Engineering",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH012-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH012-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH012-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 70,
+        "text": "The applicant must have scored at least 70% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH012-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 30000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Maharashtra Merit Scholarship for Engineering.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH013",
+    "name": "Maharashtra VJNT and SBC Post-Matric Scholarship",
+    "description": "Demo scheme: Maintenance allowance for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH013-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH013-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "VJNT",
+          "SBC"
+        ],
+        "text": "The applicant must belong to one of these categories: VJNT, SBC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH013-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 150000,
+        "text": "Annual family income must not exceed Rs. 1.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH013-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 40,
+        "text": "The applicant must have scored at least 40% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH013-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH013-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 28000,
+      "benefitType": "Maintenance allowance",
+      "summary": "Maintenance allowance for eligible students under Maharashtra VJNT and SBC Post-Matric Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH014",
+    "name": "Maharashtra EBC Fee Concession Scheme",
+    "description": "Demo scheme: Fee concession for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH014-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH014-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "General",
+          "EBC"
+        ],
+        "text": "The applicant must belong to one of these categories: General, EBC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH014-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH014-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH014-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA.",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH014-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 35000,
+      "benefitType": "Fee concession",
+      "summary": "Fee concession for eligible students under Maharashtra EBC Fee Concession Scheme.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH015",
+    "name": "Maharashtra Medical and Dental Student Support Grant",
+    "description": "Demo scheme: Study support grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH015-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH015-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH015-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH015-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "MBBS",
+          "BDS"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: MBBS, BDS.",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH015-R05",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 50000,
+      "benefitType": "Study support grant",
+      "summary": "Study support grant for eligible students under Maharashtra Medical and Dental Student Support Grant.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH016",
+    "name": "Maharashtra Pharmacy Student Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH016-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH016-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH016-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 55,
+        "text": "The applicant must have scored at least 55% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH016-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Pharm",
+          "M.Pharm"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Pharm, M.Pharm.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 20000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Maharashtra Pharmacy Student Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH017",
+    "name": "Maharashtra Arts, Commerce and Science Graduate Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH017-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH017-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 400000,
+        "text": "Annual family income must not exceed Rs. 4 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH017-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH017-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Sc",
+          "B.Com",
+          "BA"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Sc, B.Com, BA.",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH017-R05",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 12000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Maharashtra Arts, Commerce and Science Graduate Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH018",
+    "name": "Maharashtra Second-Year Engineering Continuation Grant",
+    "description": "Demo scheme: Continuation grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH018-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH018-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 700000,
+        "text": "Annual family income must not exceed Rs. 7 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH018-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 65,
+        "text": "The applicant must have scored at least 65% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH018-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH018-R05",
+        "field": "yearOfStudy",
+        "operator": "==",
+        "value": 2,
+        "text": "The applicant must be in year 2 of study.",
+        "section": "Eligibility Criteria",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 18000,
+      "benefitType": "Continuation grant",
+      "summary": "Continuation grant for eligible students under Maharashtra Second-Year Engineering Continuation Grant.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH019",
+    "name": "Maharashtra Final-Year Engineering Project Support",
+    "description": "Demo scheme: Project support grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH019-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH019-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH019-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH019-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH019-R05",
+        "field": "yearOfStudy",
+        "operator": ">=",
+        "value": 3,
+        "text": "The applicant must be in the third year of study or above.",
+        "section": "Eligibility Criteria",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 15000,
+      "benefitType": "Project support grant",
+      "summary": "Project support grant for eligible students under Maharashtra Final-Year Engineering Project Support.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH020",
+    "name": "Maharashtra MBA Entrepreneurship Scholarship",
+    "description": "Demo scheme: Entrepreneurship scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH020-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH020-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH020-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH020-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "MBA"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: MBA.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 40000,
+      "benefitType": "Entrepreneurship scholarship",
+      "summary": "Entrepreneurship scholarship for eligible students under Maharashtra MBA Entrepreneurship Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH021",
+    "name": "Maharashtra ITI Skill Development Stipend",
+    "description": "Demo scheme: Skill stipend for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH021-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Maharashtra",
+        "text": "The applicant must be a resident of Maharashtra.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH021-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 300000,
+        "text": "Annual family income must not exceed Rs. 3 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH021-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 45,
+        "text": "The applicant must have scored at least 45% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH021-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH021-R05",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 9000,
+      "benefitType": "Skill stipend",
+      "summary": "Skill stipend for eligible students under Maharashtra ITI Skill Development Stipend.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "MahaDBT (demo summary)",
+    "sourceUrl": "https://mahadbt2.maharashtra.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH022",
+    "name": "Karnataka Post-Matric Scholarship for OBC",
+    "description": "Demo scheme: Maintenance allowance for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH022-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Karnataka",
+        "text": "The applicant must be a resident of Karnataka.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH022-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to one of these categories: OBC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH022-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 200000,
+        "text": "Annual family income must not exceed Rs. 2 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH022-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 40,
+        "text": "The applicant must have scored at least 40% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH022-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH022-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 25000,
+      "benefitType": "Maintenance allowance",
+      "summary": "Maintenance allowance for eligible students under Karnataka Post-Matric Scholarship for OBC.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH023",
+    "name": "Karnataka Engineering Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH023-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Karnataka",
+        "text": "The applicant must be a resident of Karnataka.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH023-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH023-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 75,
+        "text": "The applicant must have scored at least 75% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH023-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 30000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Karnataka Engineering Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH024",
+    "name": "Gujarat Post-Matric Scholarship for SEBC and OBC",
+    "description": "Demo scheme: Maintenance allowance for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH024-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Gujarat",
+        "text": "The applicant must be a resident of Gujarat.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH024-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to one of these categories: OBC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH024-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH024-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH024-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH024-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 22000,
+      "benefitType": "Maintenance allowance",
+      "summary": "Maintenance allowance for eligible students under Gujarat Post-Matric Scholarship for SEBC and OBC.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH025",
+    "name": "Gujarat Professional Courses Fee Support",
+    "description": "Demo scheme: Fee support for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH025-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Gujarat",
+        "text": "The applicant must be a resident of Gujarat.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH025-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH025-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH025-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 28000,
+      "benefitType": "Fee support",
+      "summary": "Fee support for eligible students under Gujarat Professional Courses Fee Support.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH026",
+    "name": "Tamil Nadu Engineering Scholarship for BC and MBC Students",
+    "description": "Demo scheme: Fee support for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH026-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Tamil Nadu",
+        "text": "The applicant must be a resident of Tamil Nadu.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH026-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to one of these categories: OBC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH026-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH026-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH026-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH026-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 30000,
+      "benefitType": "Fee support",
+      "summary": "Fee support for eligible students under Tamil Nadu Engineering Scholarship for BC and MBC Students.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH027",
+    "name": "Tamil Nadu Higher Education Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH027-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Tamil Nadu",
+        "text": "The applicant must be a resident of Tamil Nadu.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH027-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 500000,
+        "text": "Annual family income must not exceed Rs. 5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH027-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 80,
+        "text": "The applicant must have scored at least 80% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH027-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "BDS",
+          "MBBS"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, B.Sc, B.Com, BA, BDS, MBBS.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 20000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Tamil Nadu Higher Education Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH028",
+    "name": "Delhi Higher Education Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH028-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Delhi",
+        "text": "The applicant must be a resident of Delhi.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH028-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH028-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH028-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH028-R05",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 18000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Delhi Higher Education Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH029",
+    "name": "Uttar Pradesh Post-Matric Scholarship for OBC",
+    "description": "Demo scheme: Maintenance allowance for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH029-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Uttar Pradesh",
+        "text": "The applicant must be a resident of Uttar Pradesh.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH029-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to one of these categories: OBC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH029-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 200000,
+        "text": "Annual family income must not exceed Rs. 2 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH029-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 40,
+        "text": "The applicant must have scored at least 40% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH029-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH029-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 20000,
+      "benefitType": "Maintenance allowance",
+      "summary": "Maintenance allowance for eligible students under Uttar Pradesh Post-Matric Scholarship for OBC.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH030",
+    "name": "Rajasthan Engineering Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH030-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Rajasthan",
+        "text": "The applicant must be a resident of Rajasthan.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH030-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 500000,
+        "text": "Annual family income must not exceed Rs. 5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH030-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 70,
+        "text": "The applicant must have scored at least 70% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH030-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH030-R05",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 24000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Rajasthan Engineering Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH031",
+    "name": "Madhya Pradesh Post-Matric Scholarship for SC",
+    "description": "Demo scheme: Maintenance allowance for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH031-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Madhya Pradesh",
+        "text": "The applicant must be a resident of Madhya Pradesh.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH031-R02",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "SC"
+        ],
+        "text": "The applicant must belong to one of these categories: SC.",
+        "section": "Eligibility Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH031-R03",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH031-R04",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 40,
+        "text": "The applicant must have scored at least 40% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH031-R05",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 5
+      },
+      {
+        "ruleId": "SCH031-R06",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 6
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 30000,
+      "benefitType": "Maintenance allowance",
+      "summary": "Maintenance allowance for eligible students under Madhya Pradesh Post-Matric Scholarship for SC.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH032",
+    "name": "West Bengal Merit-cum-Means Scholarship",
+    "description": "Demo scheme: Merit-cum-means scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH032-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "West Bengal",
+        "text": "The applicant must be a resident of West Bengal.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH032-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH032-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH032-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "BDS",
+          "MBBS"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, B.Sc, B.Com, BA, BDS, MBBS.",
+        "section": "Eligible Courses",
+        "priority": 4
+      },
+      {
+        "ruleId": "SCH032-R05",
+        "field": "domicileStatus",
+        "operator": "==",
+        "value": "Yes",
+        "text": "The applicant must hold a valid domicile certificate.",
+        "section": "Documents Required",
+        "priority": 5
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 12000,
+      "benefitType": "Merit-cum-means scholarship",
+      "summary": "Merit-cum-means scholarship for eligible students under West Bengal Merit-cum-Means Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH033",
+    "name": "Kerala Higher Education Scholarship for Top Scorers",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH033-R01",
+        "field": "state",
+        "operator": "==",
+        "value": "Kerala",
+        "text": "The applicant must be a resident of Kerala.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH033-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH033-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 85,
+        "text": "The applicant must have scored at least 85% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH033-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Domicile Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 15000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under Kerala Higher Education Scholarship for Top Scorers.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "State Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH034",
+    "name": "National Merit Scholarship for Undergraduates",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH034-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH034-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 85,
+        "text": "The applicant must have scored at least 85% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH034-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "BDS",
+          "MBBS"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, B.Sc, B.Com, BA, BDS, MBBS.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 25000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Merit Scholarship for Undergraduates.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH035",
+    "name": "National Scholarship for SC Students",
+    "description": "Demo scheme: Maintenance and fee support for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH035-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "SC"
+        ],
+        "text": "The applicant must belong to one of these categories: SC.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH035-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH035-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 40,
+        "text": "The applicant must have scored at least 40% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH035-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 35000,
+      "benefitType": "Maintenance and fee support",
+      "summary": "Maintenance and fee support for eligible students under National Scholarship for SC Students.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH036",
+    "name": "National Scholarship for ST Students",
+    "description": "Demo scheme: Maintenance and fee support for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH036-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "ST"
+        ],
+        "text": "The applicant must belong to one of these categories: ST.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH036-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH036-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 40,
+        "text": "The applicant must have scored at least 40% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH036-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 35000,
+      "benefitType": "Maintenance and fee support",
+      "summary": "Maintenance and fee support for eligible students under National Scholarship for ST Students.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH037",
+    "name": "National Scholarship for OBC Students",
+    "description": "Demo scheme: Maintenance allowance for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH037-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to one of these categories: OBC.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH037-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH037-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 45,
+        "text": "The applicant must have scored at least 45% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH037-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 20000,
+      "benefitType": "Maintenance allowance",
+      "summary": "Maintenance allowance for eligible students under National Scholarship for OBC Students.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH038",
+    "name": "National Minority Scholarship for Technical Courses",
+    "description": "Demo scheme: Merit-cum-means scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH038-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "Minority"
+        ],
+        "text": "The applicant must belong to one of these categories: Minority.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH038-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 250000,
+        "text": "Annual family income must not exceed Rs. 2.5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH038-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH038-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 30000,
+      "benefitType": "Merit-cum-means scholarship",
+      "summary": "Merit-cum-means scholarship for eligible students under National Minority Scholarship for Technical Courses.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH039",
+    "name": "National Engineering Excellence Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH039-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH039-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 90,
+        "text": "The applicant must have scored at least 90% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH039-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH039-R04",
+        "field": "yearOfStudy",
+        "operator": ">=",
+        "value": 2,
+        "text": "The applicant must be in the second year of study or above.",
+        "section": "Eligibility Criteria",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 40000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Engineering Excellence Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH040",
+    "name": "National Medical Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH040-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH040-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 75,
+        "text": "The applicant must have scored at least 75% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH040-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "MBBS",
+          "BDS"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: MBBS, BDS.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 45000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Medical Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH041",
+    "name": "National Postgraduate Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH041-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH041-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 65,
+        "text": "The applicant must have scored at least 65% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH041-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "M.Tech",
+          "MBA",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: M.Tech, MBA, M.Sc, MA, M.Com, M.Pharm.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 30000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Postgraduate Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH042",
+    "name": "National Science Aptitude Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH042-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 800000,
+        "text": "Annual family income must not exceed Rs. 8 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH042-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 80,
+        "text": "The applicant must have scored at least 80% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH042-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Sc",
+          "M.Sc"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Sc, M.Sc.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 20000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Science Aptitude Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH043",
+    "name": "National Technical Education Support Scheme",
+    "description": "Demo scheme: Study support grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH043-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 500000,
+        "text": "Annual family income must not exceed Rs. 5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH043-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH043-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "Diploma"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., Diploma.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 22000,
+      "benefitType": "Study support grant",
+      "summary": "Study support grant for eligible students under National Technical Education Support Scheme.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH044",
+    "name": "National Pharmacy Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH044-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH044-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH044-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Pharm",
+          "M.Pharm"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Pharm, M.Pharm.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 18000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Pharmacy Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH045",
+    "name": "National Commerce and Management Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH045-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 600000,
+        "text": "Annual family income must not exceed Rs. 6 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH045-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH045-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Com",
+          "MBA",
+          "M.Com"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Com, MBA, M.Com.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 16000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Commerce and Management Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH046",
+    "name": "National Arts and Humanities Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH046-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 400000,
+        "text": "Annual family income must not exceed Rs. 4 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH046-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 55,
+        "text": "The applicant must have scored at least 55% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH046-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "BA",
+          "MA"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: BA, MA.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 12000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National Arts and Humanities Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH047",
+    "name": "National ITI and Diploma Skills Scholarship",
+    "description": "Demo scheme: Skill stipend for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH047-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 300000,
+        "text": "Annual family income must not exceed Rs. 3 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH047-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH047-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 3
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 10000,
+      "benefitType": "Skill stipend",
+      "summary": "Skill stipend for eligible students under National ITI and Diploma Skills Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH048",
+    "name": "National First-Year Student Welcome Grant",
+    "description": "Demo scheme: Admission grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH048-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 500000,
+        "text": "Annual family income must not exceed Rs. 5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH048-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 60,
+        "text": "The applicant must have scored at least 60% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH048-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH048-R04",
+        "field": "yearOfStudy",
+        "operator": "==",
+        "value": 1,
+        "text": "The applicant must be in year 1 of study.",
+        "section": "Eligibility Criteria",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 8000,
+      "benefitType": "Admission grant",
+      "summary": "Admission grant for eligible students under National First-Year Student Welcome Grant.",
+      "frequency": "one-time",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH049",
+    "name": "National Final-Year Completion Support",
+    "description": "Demo scheme: Completion grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH049-R01",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 400000,
+        "text": "Annual family income must not exceed Rs. 4 lakh.",
+        "section": "Income Ceiling",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH049-R02",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 55,
+        "text": "The applicant must have scored at least 55% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH049-R03",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH049-R04",
+        "field": "yearOfStudy",
+        "operator": ">=",
+        "value": 3,
+        "text": "The applicant must be in the third year of study or above.",
+        "section": "Eligibility Criteria",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 10000,
+      "benefitType": "Completion grant",
+      "summary": "Completion grant for eligible students under National Final-Year Completion Support.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH050",
+    "name": "National Economically Weaker Students Support Scheme",
+    "description": "Demo scheme: Study support grant for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH050-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "General",
+          "EBC"
+        ],
+        "text": "The applicant must belong to one of these categories: General, EBC.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH050-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 300000,
+        "text": "Annual family income must not exceed Rs. 3 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH050-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 50,
+        "text": "The applicant must have scored at least 50% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH050-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E.",
+          "B.Pharm",
+          "MBBS",
+          "BDS",
+          "MBA",
+          "M.Tech",
+          "M.Sc",
+          "MA",
+          "M.Com",
+          "M.Pharm",
+          "B.Sc",
+          "B.Com",
+          "BA",
+          "Diploma",
+          "ITI"
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E., B.Pharm, MBBS, BDS, MBA, M.Tech, M.Sc, MA, M.Com, M.Pharm, B.Sc, B.Com, BA, Diploma, ITI.",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 15000,
+      "benefitType": "Study support grant",
+      "summary": "Study support grant for eligible students under National Economically Weaker Students Support Scheme.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  },
+  {
+    "_id": "SCH051",
+    "name": "National OBC Technical Merit Scholarship",
+    "description": "Demo scheme: Merit scholarship for students who meet the listed criteria.",
+    "rules": [
+      {
+        "ruleId": "SCH051-R01",
+        "field": "category",
+        "operator": "in",
+        "value": [
+          "OBC"
+        ],
+        "text": "The applicant must belong to one of these categories: OBC.",
+        "section": "Eligibility Criteria",
+        "priority": 1
+      },
+      {
+        "ruleId": "SCH051-R02",
+        "field": "familyIncome",
+        "operator": "<=",
+        "value": 500000,
+        "text": "Annual family income must not exceed Rs. 5 lakh.",
+        "section": "Income Ceiling",
+        "priority": 2
+      },
+      {
+        "ruleId": "SCH051-R03",
+        "field": "academicPercentage",
+        "operator": ">=",
+        "value": 75,
+        "text": "The applicant must have scored at least 75% in the previous qualifying examination.",
+        "section": "Academic Criteria",
+        "priority": 3
+      },
+      {
+        "ruleId": "SCH051-R04",
+        "field": "course",
+        "operator": "in",
+        "value": [
+          "B.Tech",
+          "B.E."
+        ],
+        "text": "The applicant must be enrolled in one of these courses: B.Tech, B.E..",
+        "section": "Eligible Courses",
+        "priority": 4
+      }
+    ],
+    "documents": [
+      "Income Certificate",
+      "Previous Year Marksheet",
+      "Bonafide Certificate",
+      "Category Certificate"
+    ],
+    "benefits": {
+      "estimatedAnnualValue": 28000,
+      "benefitType": "Merit scholarship",
+      "summary": "Merit scholarship for eligible students under National OBC Technical Merit Scholarship.",
+      "frequency": "annual",
+      "isIllustrative": true
+    },
+    "source": "National Scholarship Portal (demo summary)",
+    "sourceUrl": "https://scholarships.gov.in",
+    "active": true
+  }
+]
