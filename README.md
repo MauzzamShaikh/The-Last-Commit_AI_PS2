@@ -135,4 +135,4 @@ The MVP uses a **curated demo dataset** of 51 schemes. Scheme names reference re
 - Mauzzam Shaikh: backend, rule engine, database, LLM integration
 - Junaid Mulla: frontend and UX
 
-Built for [Hackathon name], 2026.
+Built for Tektonix, 2026.
