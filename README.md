@@ -1,4 +1,4 @@
-# [Project Name]: Scholarship & Scheme Eligibility Assistant
+# Scholar Lens: Scholarship & Scheme Eligibility Assistant
 
 Students and families often miss scholarships they qualify for because eligibility rules are buried in long documents. **[Project Name]** matches a student's profile against a curated set of scheme rules and returns, for every scheme:
 
